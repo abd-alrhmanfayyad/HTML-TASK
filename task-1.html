@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            padding: 30px;
+        }
+        .myDiv {
+            border: 5px groove;
+            width: 700px;
+            margin: 30px;
+            padding: 20px;
+        }
+
+        input[type="text"]{
+            width: 240px;
+        }
+        label{
+            font-size: large;
+        }
+        ul{
+             font-size: large;
+        }
+        table, th, td {
+  border: 1px solid black;
+   margin: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form !</h1>
+    <div class="myDiv">
+        <h2>Personal details</h2>
+        <hr>
+        <form action="">
+            <label for="fname" >First name:</label>
+            <input type="text" id="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname"><br><br>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email"><br><br>
+
+            <label for="Male">Gender:</label><input type="radio" id="Male" name="gender" value="Male"><label
+                for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br><br>
+
+            <label for="City">City:</label>
+            <select name="City" id="City">
+                <option value="Amman">Amman</option>
+                <option value="Zarqa">Zarqa</option>
+                <option value="Aqaba">Aqaba</option>
+                <option value="Irbid">Irbid</option>
+            </select><br>
+            <br>
+            <button type="button">Sign Up</button>
+        </form>
+    </div>
+
+    <h1>What about Back-end?</h1>
+
+    <ul style="list-style-type:square;">
+  <li>Back-end</li>
+  <ol type="i">
+   <li>Python</li>
+  <li>PHP</li>
+   <ol type="A" start="26" reversed>
+   <li>Laravel</li>
+  <li>Pure</li>
+</ol>
+
+   <h1>Table Num.2</h1>
+</ul>
+<table>
+    <tr>
+    <th rowspan="2">Row 1-2,col1</th>
+     <th >Row 1,Col 2</th>
+    <th >Row1,Col 3</th>
+    <th >Row1,Col 4</th>
+    </tr>
+    <tr>
+         <th rowspan="2" colspan="2">Row 2-3,Col 2-3</th>
+    <th >Row2,Col 4</th>
+    </tr>
+    <tr>
+        <th >Row 3,Col 1</th>
+    <th >Row 3,Col 4</th>
+    </tr>
+    <tr>
+        <th>Row 4,col1</th>
+     <th >Row 4,Col 2</th>
+    <th  colspan="2">Row 4,Col 3</th>
+    </tr>
+</table>
+
+
+</body>
+
+</html>
